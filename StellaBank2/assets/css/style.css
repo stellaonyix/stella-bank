@@ -1,0 +1,218 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+#adminbtn{
+  padding: 10px 10px;
+  background-color: #2ecc71;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+body{
+  background:linear-gradient(135deg,#081224,#0c1b36);
+  color:white;
+  margin: 0;
+  /* height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center; */
+}
+.form-error{
+  display:none;
+  background:rgba(231,76,60,0.15);
+  border:1px solid rgba(231,76,60,0.4);
+  color:#ffb3ad;
+  padding:10px 12px;
+  border-radius:8px;
+  font-size:13px;
+  margin-bottom:15px;
+}
+
+.form-error.show{
+  display:block;
+}
+.page{
+  width:100%;
+  /* max-width:1100px; */
+  /* height:90vh; */
+  background:#0f1c33;
+  /* border-radius:20px; */
+  padding:30px;
+  display:none;
+  flex-direction:column;
+  /* overflow:hidden; */
+}
+
+.active{
+  display:flex;
+}
+
+/* ================= AUTH ================= */
+
+.auth-container{
+  max-width:400px;
+  margin:auto;
+  background:rgba(255,255,255,0.05);
+  padding:30px;
+  border-radius:20px;
+}
+
+.auth-container h2{
+  margin-bottom:20px;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border-radius:10px;
+  border:none;
+  outline:none;
+}
+
+button{
+  padding:12px 20px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.btn-primary{
+  background:#27ae60;
+  color:white;
+  width:100%;
+}
+
+.switch{
+  margin-top:15px;
+  font-size:14px;
+  cursor:pointer;
+  color:#ccc;
+}
+
+/* ================= DASHBOARD ================= */
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.logo{
+  font-weight:700;
+  font-size:20px;
+}
+
+.profile{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.avatar{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#27ae60,#2ecc71);
+  display:grid;
+  place-items:center;
+  font-weight:600;
+}
+
+.logout{
+  background:#e74c3c;
+  color:white;
+}
+
+.balance-card{
+  background:linear-gradient(135deg,#0b2344,#0e3a6f);
+  border-radius:20px;
+  padding:30px;
+  margin-bottom:25px;
+}
+
+.balance-card p{
+  opacity:.7;
+  font-size:13px;
+}
+
+.balance-card h1{
+  margin:10px 0;
+  font-size:32px;
+}
+
+.balance-actions{
+  display:flex;
+  gap:10px;
+}
+
+.balance-actions button{
+  flex:1;
+}
+
+.fund{
+  background:white;
+  color:#0b2344;
+}
+
+.send{
+  background:#27ae60;
+  color:white;
+}
+
+.dashboard-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:20px;
+  /* flex:1;
+  overflow:hidden; */
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:16px;
+  /* overflow-y:auto; */
+}
+
+.quick-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+
+.quick{
+  background:rgba(255,255,255,0.08);
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.quick:hover{
+  background:#27ae60;
+}
+
+.quick span{
+  display:block;
+  margin-top:5px;
+  font-size:12px;
+}
+
+.tx{
+  display:flex;
+  justify-content:space-between;
+  padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  font-size:14px;
+}
+
+.credit{color:#2ecc71;}
+.debit{color:#e74c3c;}
